@@ -1,2 +1,4 @@
 # Portfolio
-Welcome to my portfolio
+
+Hi, 👋
+This is my own portfolio with my ❤️ to build websites.
