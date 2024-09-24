@@ -1,21 +1,9 @@
-'use client';
-import { useEffect } from 'react';
+import Hero from '@/components/Hero';
 
-import { renderCanvas } from '@/utils/canvas';
-
-const Home = () => {
-  useEffect(() => {
-    renderCanvas();
-  }, []);
-
-  return (
-    <div className="h-full w-full relative bg-transparent">
-      <canvas
-        className="pointer-events-none absolute inset-0 mx-auto"
-        id="canvas"
-      ></canvas>
-    </div>
-  );
-};
+const Home = () => (
+  <div className="w-full relative flex flex-col">
+    <Hero />
+  </div>
+);
 
 export default Home;

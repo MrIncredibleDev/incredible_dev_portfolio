@@ -5,12 +5,13 @@ import '@/styles/globals.css';
 
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const raleway = Raleway({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Incredible Dev',
-  description: 'Personal Portfolio of IncredibleDev'
+  title: 'Lachlan Pelletier',
+  description: 'Personal Portfolio of Lachlan Pelletier'
 };
 
 export default function RootLayout({
@@ -29,6 +30,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

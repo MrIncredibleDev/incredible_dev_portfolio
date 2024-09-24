@@ -6,16 +6,28 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
+    --border: 20 5.9% 90%;
   }
 
   .dark {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
+    --border: 12 6.5% 15.1%;
   }
 }
 
-body {
-  @apply bg-background text-foreground;
+* {
+  scrollbar-color: #F50537 transparent;
+  scrollbar-width: thin;
+}
+
+@layer base{
+  *{
+    border-color: hsl(var(--border));
+  }
+  body {
+    @apply text-foreground bg-background;
+  }
 }
 
 .container{
