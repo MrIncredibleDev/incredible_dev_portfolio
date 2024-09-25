@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Raleway } from 'next/font/google';
+import { Quicksand } from 'next/font/google';
 
 import '@/styles/globals.css';
 
@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const raleway = Raleway({ subsets: ['latin'] });
+const generalFont = Quicksand({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Lachlan Pelletier',
@@ -21,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
+      <body className={generalFont.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

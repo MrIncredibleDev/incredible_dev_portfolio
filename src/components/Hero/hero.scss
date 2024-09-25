@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+#trav {
+	-webkit-animation: blink 0.01s infinite alternate;
+	-moz-animation: blink 0.01s infinite alternate;
+	-o-animation: blink 0.01s infinite alternate;
+	animation: blink 0.01s infinite alternate;
+}
+
+#fade {
+	opacity: 0.8;
+	-webkit-animation: fade 3s infinite alternate;
+	-moz-animation: fade 3s infinite alternate;
+	-o-animation: fade 3s infinite alternate;
+	animation: fade 3s infinite alternate;
+}
+
+.neon {
+	border: #D2E0FB 2px solid;
+	box-shadow: inset 0 0 15px 0 #D2E0FB, 0 0 15px 0 #D2E0FB;
+}
+
+.neon-blue {
+	font-family: 'Nixie One', Helvetica, Arial, sans-serif;
+	color: #ebffff;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3), 0 0px 15px #fff, 0 0 10px #38eeff, 0 0 50px #38eeff;
+}
+
+.neon-red {
+	font-family: 'Nixie One', Helvetica, Arial, sans-serif;
+	color: #f55172;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5), 0 0 20px #fff, 0 0 10px #F50537, 0 0 50px #F50537;
+}
+
+.neon-off {
+	font-family: 'Nixie One', Helvetica, Arial, sans-serif;
+	color: gray;
+	text-shadow: none;
+}
+
+@-moz-keyframes blink {
+	70% {
+		opacity: 0.7;
+	}
+}
+
+@-webkit-keyframes blink {
+	45% {
+		opacity: 0.5;
+	}
+}
+
+@-o-keyframes blink {
+	70% {
+		opacity: 0.7;
+	}
+}
+
+@keyframes blink {
+	70% {
+		opacity: 0.7;
+	}
+}
+
+@-moz-keyframes fade {
+	40% {
+		opacity: 0.8;
+	}
+
+	42% {
+		opacity: 0.1;
+	}
+
+	43% {
+		opacity: 0.8;
+	}
+
+	45% {
+		opacity: 0.1;
+	}
+
+	46% {
+		opacity: 0.8;
+	}
+}
+
+@-webkit-keyframes fade {
+	40% {
+		opacity: 0.8;
+	}
+
+	42% {
+		opacity: 0.1;
+	}
+
+	43% {
+		opacity: 0.8;
+	}
+
+	45% {
+		opacity: 0.1;
+	}
+
+	46% {
+		opacity: 0.8;
+	}
+}
+
+@-o-keyframes fade {
+	40% {
+		opacity: 0.8;
+	}
+
+	42% {
+		opacity: 0.1;
+	}
+
+	43% {
+		opacity: 0.8;
+	}
+
+	45% {
+		opacity: 0.1;
+	}
+
+	46% {
+		opacity: 0.8;
+	}
+}
+
+@keyframes fade {
+	40% {
+		opacity: 0.8;
+	}
+
+	42% {
+		opacity: 0.1;
+	}
+
+	43% {
+		opacity: 0.8;
+	}
+
+	45% {
+		opacity: 0.1;
+	}
+
+	46% {
+		opacity: 0.8;
+	}
+}
+
+.lines {
+	$color: #59c1fe;
+	position: fixed;
+	width: 100vw;
+	height: 4em;
+	background: linear-gradient(rgba($color, 0.2) 20%, $color 40%, $color 60%, rgba($color, 0.2) 80%);
+	background-size: 1px 0.5em;
+	box-shadow: 0 0 1em rgba($color, 0.4);
+	transform: translateY(-1em);
+	left: 0;
+}
+
+.incredible {
+	position: relative;
+	font-family: 'Exo';
+	margin: 0;
+	transform: skew(-15deg);
+	letter-spacing: 0.03em;
+
+	span:first-child {
+		display: block;
+		text-shadow: 0 0 0.1em #8ba2d0, 0 0 0.2em black, 0 0 5em #165ff3;
+		-webkit-text-stroke: 0.06em rgba(black, 0.5);
+	}
+
+	span:last-child {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-image: linear-gradient(#032d50 25%, #00a1ef 35%, white 50%, #20125f 50%, #8313e7 55%, #ff61af 75%);
+		-webkit-text-stroke: 0.01em #94a0b9;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.rest {
+	font-family: 'Mr Dafoe';
+	color: white;
+	text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+	transform: rotate(-7deg);
+}

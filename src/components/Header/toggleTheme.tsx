@@ -14,8 +14,12 @@ const ToggleTheme = () => {
   };
 
   return (
-    <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+    <button
+      className="relative size-9 justify-center items-center flex"
+      onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+    >
       {renderIcon()}
+      <div className="size-full bg-transparent rounded-full border border-[#F50537] absolute top-0 left-0 z-[-1] pulse-border" />
     </button>
   );
 };
